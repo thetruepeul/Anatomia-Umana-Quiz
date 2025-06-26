@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz di Anatomia Umana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Pagina iniziale -->
+  <section id="home" class="active">
+    <h1>Seleziona un Quiz</h1>
+    <div id="quiz-list" class="btn-grid"></div>
+  </section>
+
+  <!-- Contenitore quiz -->
+  <section id="quiz-container" class="hidden">
+    <div class="quiz-header">
+      <h2 id="quiz-title"></h2>
+      <div id="timer" class="timer hidden"></div>
+    </div>
+
+    <div id="question-box">
+      <p id="question-text"></p>
+    </div>
+
+    <div class="btn-grid">
+      <button id="true-btn"  class="answer-btn">Vero</button>
+      <button id="false-btn" class="answer-btn">Falso</button>
+    </div>
+
+    <p id="feedback" class="feedback"></p>
+    <button id="next-btn" class="next-btn hidden">Prossima&nbsp;Domanda</button>
+  </section>
+
+  <!-- Riepilogo -->
+  <section id="result-container" class="hidden">
+    <h2>Risultati</h2>
+    <p id="result-text"></p>
+    <button id="home-btn" class="primary-btn">Torna alla Selezione</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* ------------------- Reset rapido ------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  background: #f4f7fa;
+  color: #222;
+  line-height: 1.4;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* ------------------- Contenitori ------------------- */
+section {
+  width: 100%;
+  max-width: 560px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem 2.5rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.btn-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.answer-btn {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ------------------- Pulsanti ------------------- */
+button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+button:hover { transform: translateY(-2px); }
+button:active { transform: translateY(0); }
+
+.primary-btn,
+.answer-btn,
+.next-btn {
+  background: #0066cc;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.15);
+}
+
+.next-btn { width: 100%; margin-top: 1.25rem; }
+
+.feedback {
+  margin-top: 1rem;
+  min-height: 1.5rem;
+  font-weight: 600;
+}
+
+.feedback.correct { color: #1b8e29; }
+.feedback.wrong   { color: #d93025; }
+
+.timer {
+  font-weight: 600;
+  background: #ffc107;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* ------------------- Visibilità ------------------- */
+.hidden { display: none !important; }
+.active { display: block; }
+
+/* ------------------- Responsive ------------------- */
+@media (max-width: 480px) {
+  section { padding: 1.5rem 1rem 2rem; }
+  button  { font-size: 0.95rem; }
+}
