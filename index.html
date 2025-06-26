@@ -8,17 +8,18 @@
 </head>
 
 <body>
-  <!-- Pagina iniziale -->
+  <!-- Home ------------------------------------------------------------- -->
   <section id="home" class="active">
     <h1>Seleziona un Quiz</h1>
     <div id="quiz-list" class="btn-grid"></div>
   </section>
 
-  <!-- Contenitore quiz -->
+  <!-- Quiz ------------------------------------------------------------- -->
   <section id="quiz-container" class="hidden">
     <div class="quiz-header">
       <h2 id="quiz-title"></h2>
       <div id="timer" class="timer hidden"></div>
+      <button id="quit-btn" title="Torna alla Home">🏠</button>
     </div>
 
     <div id="question-box">
@@ -34,7 +35,7 @@
     <button id="next-btn" class="next-btn hidden">Prossima&nbsp;Domanda</button>
   </section>
 
-  <!-- Riepilogo -->
+  <!-- Risultati -------------------------------------------------------- -->
   <section id="result-container" class="hidden">
     <h2>Risultati</h2>
     <p id="result-text"></p>
